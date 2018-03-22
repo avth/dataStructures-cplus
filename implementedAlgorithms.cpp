@@ -33,26 +33,6 @@ using namespace std;
 #include "./sortingAlgorithms/bubbleSort.h"
 #include "./randomAlgorithms/DigPow.h"
 
-/*#include "./dataStructures/dataStructures.cpp"
-#include "./dataStructures/stacks_linkedList.cpp"
-#include "./dataStructures/queue_Array.cpp"
-#include "./dataStructures/queue_LinkedList.cpp"
-#include "./dataStructures/stack.cpp"
-#include "./dataStructures/postfixStack.cpp"
-
-#include "./algorithms/algorithms.cpp"
-#include "./algorithms/euclid.cpp"
-#include "./algorithms/sieveOfEratosthenes.cpp"
-#include "./algorithms/josephus.cpp"
-#include "./algorithms/factorial.cpp"
-#include "./algorithms/conversion.cpp"
-#include "./algorithms/deciToBinary.cpp"
-
-#include "./sortingAlgorithms/bubbleSort.cpp"
-#include "./linkedLists/linkedList.cpp"
-#include "./linkedLists/linkedListInfo.cpp"
-
-*/
 class MainDisplay {
 
 public:
