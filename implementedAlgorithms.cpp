@@ -310,6 +310,7 @@ void MainDisplay::dataStructures() {
 void MainDisplay::random_algorithms() {
 
 	int base, exp;
+	int exponent_result;
 
 	DigPow dp;
 
@@ -324,7 +325,8 @@ void MainDisplay::random_algorithms() {
 			cin >> base;
 			cout << "\t Enter Positive Exponent:";
 			cin >> exp;
-			dp.digPow(base, exp);
+			exponent_result = dp.digPow(base, exp);
+			cout << "\n Result : " << exponent_result;
 			break;
 		default:
 			userChoice = 'n';
