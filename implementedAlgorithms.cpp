@@ -31,6 +31,7 @@ using namespace std;
 
 #include "./sortingAlgorithms/sortAlgorithms.h"
 #include "./sortingAlgorithms/bubbleSort.h"
+#include "./randomAlgorithms/DigPow.h"
 
 /*#include "./dataStructures/dataStructures.cpp"
 #include "./dataStructures/stacks_linkedList.cpp"
@@ -68,10 +69,12 @@ public:
 	void sievePrimeNos();
 	void conversion();
 	void recursionAlgorithms();
+	void realAlgorithms();
 
 private:
 	char algoChoice, userChoice;
 	int convChoice, dsChoice, alChoice, llChoice, sortChoice, count;
+	int ranAlgCh;
 };
 
 MainDisplay::MainDisplay() {
@@ -100,6 +103,7 @@ void MainDisplay::displayOptions() {
 		cout << "G. DYNAMIC PROGRAMMING" << endl;
 		cout << "H. ALGORITHMS" << endl;
 		cout << "I. DATA STRUCTURES" << endl;
+		cout << "J. RANDOM ALGORITHMS" << endl;
 		cout << "Q.Quit" << endl;
 		cout << "Enter Algorithm Choice:";
 		cin >> algoChoice;
@@ -138,11 +142,15 @@ void MainDisplay::displayOptions() {
 			break;
 		case 'H':
 		case 'h':
-			MainDisplay::random_algorithms();
+			MainDisplay::realAlgorithms();
 			break;
 		case 'I':
 		case 'i':
 			MainDisplay::dataStructures();
+			break;
+		case 'J':
+		case 'j':
+			MainDisplay::random_algorithms();
 			break;
 		case 'Q':
 		case 'q':
@@ -298,7 +306,38 @@ void MainDisplay::dataStructures() {
 	}
 }
 
+
 void MainDisplay::random_algorithms() {
+
+	int base, exp;
+
+	DigPow dp;
+
+	while (userChoice == 'y') {
+		cout << "\n 1. Number Exponent";
+		cout << " \n Enter Choice : ";
+		cin >> ranAlgCh;
+
+		switch (ranAlgCh) {
+		case 1:
+			cout << "\t Enter Positive Integer:";
+			cin >> base;
+			cout << "\t Enter Positive Exponent:";
+			cin >> exp;
+			dp.digPow(base, exp);
+			break;
+		default:
+			userChoice = 'n';
+			cerr << "Wrong Random Algorithm Choice";
+		}	//	switch loop ends here
+		cout << "\n Do you want to continue the random algorithms [Y/N] ?";
+		cin >> userChoice;
+		if (userChoice == 'n' || userChoice == 'N')
+			break;
+	}	//	while loop ends here
+}	//	class ends here
+
+void MainDisplay::realAlgorithms() {
 	algorithms alObj, *alPtr;
 
 	alPtr = &alObj;

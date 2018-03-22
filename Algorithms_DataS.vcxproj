@@ -112,6 +112,7 @@
     <ClCompile Include="datastructures\queue_LinkedList.cpp" />
     <ClCompile Include="datastructures\stack.cpp" />
     <ClCompile Include="datastructures\stacks_linkedList.cpp" />
+    <ClCompile Include="randomAlgorithms\DigPow.cpp" />
     <ClCompile Include="implementedAlgorithms.cpp" />
     <ClCompile Include="linkedlists\linkedList.cpp" />
     <ClCompile Include="linkedlists\linkedListInfo.cpp" />
@@ -126,6 +127,7 @@
     <ClInclude Include="algorithms\factorial.h" />
     <ClInclude Include="algorithms\josephus.h" />
     <ClInclude Include="algorithms\primeNums.h" />
+    <ClInclude Include="randomAlgorithms\DigPow.h" />
     <ClInclude Include="linkedLists\linkedList.h" />
     <ClInclude Include="linkedLists\linkedListInfo.h" />
     <ClInclude Include="dataStructures\dataStructures.h" />
