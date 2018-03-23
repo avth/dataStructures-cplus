@@ -112,12 +112,14 @@
     <ClCompile Include="datastructures\queue_LinkedList.cpp" />
     <ClCompile Include="datastructures\stack.cpp" />
     <ClCompile Include="datastructures\stacks_linkedList.cpp" />
+    <ClCompile Include="InsertionSort.cpp" />
     <ClCompile Include="randomAlgorithms\DigPow.cpp" />
     <ClCompile Include="implementedAlgorithms.cpp" />
     <ClCompile Include="linkedlists\linkedList.cpp" />
     <ClCompile Include="linkedlists\linkedListInfo.cpp" />
     <ClCompile Include="sortingalgorithms\bubbleSort.cpp" />
     <ClCompile Include="sortingAlgorithms\sortAlgorithms.cpp" />
+    <ClCompile Include="randomAlgorithms\VowelIndex.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="algorithms\algorithms.h" />
@@ -127,6 +129,7 @@
     <ClInclude Include="algorithms\factorial.h" />
     <ClInclude Include="algorithms\josephus.h" />
     <ClInclude Include="algorithms\primeNums.h" />
+    <ClInclude Include="InsertionSort.h" />
     <ClInclude Include="randomAlgorithms\DigPow.h" />
     <ClInclude Include="linkedLists\linkedList.h" />
     <ClInclude Include="linkedLists\linkedListInfo.h" />
@@ -139,6 +142,7 @@
     <ClInclude Include="resource.h" />
     <ClInclude Include="sortingAlgorithms\bubbleSort.h" />
     <ClInclude Include="sortingAlgorithms\sortAlgorithms.h" />
+    <ClInclude Include="randomAlgorithms\VowelIndex.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Algorithms_DataS.rc" />

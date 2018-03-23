@@ -6,10 +6,11 @@
 * Class Name	:	sortAlgorithms.h
 */
 
-
 class sortAlgorithms {
 public:
 	sortAlgorithms();
 	~sortAlgorithms();
 	void sortAlgoInfo();
+	void enterCountAndNumbersInArray(int[]);
+	void printOriginalArr(int[], int);
 };

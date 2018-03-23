@@ -1,5 +1,5 @@
 /*
- *      
+ *
  *   /\    |             .  |  |
  *  /- \   | --- ---  |- | - - |    |\  /|  ---
  *	/    \  |( _||   | |  |  |  | -| | \/ |  |__
@@ -8,9 +8,13 @@
  *
  */
 
-#include<iostream>
-using namespace std;
+#define VOWEL_MAX 10
+
 #include <stdlib.h>
+#include<iostream>
+#include<string>
+using namespace std;
+
 #include "./algorithms/algorithms.h"
 #include "./algorithms/binaryNumber.h"
 #include "./algorithms/Conversion.h"
@@ -32,6 +36,7 @@ using namespace std;
 #include "./sortingAlgorithms/sortAlgorithms.h"
 #include "./sortingAlgorithms/bubbleSort.h"
 #include "./randomAlgorithms/DigPow.h"
+#include "./randomAlgorithms/VowelIndex.h"
 
 class MainDisplay {
 
@@ -139,7 +144,7 @@ void MainDisplay::displayOptions() {
 		default:
 			cerr << "\nWrong Choice .";
 		}
-		if ( (algoChoice == 'q') | (algoChoice == 'Q'))
+		if ((algoChoice == 'q') | (algoChoice == 'Q'))
 			exit(0);
 		cout << "\n Do You Want To Do Another Operation. Continue (y/n) ? ";
 		cin >> userChoice;
@@ -238,7 +243,7 @@ void MainDisplay::dataStructures() {
 	Stack_LinkedList stLlObj;
 	Queue_Array queArrObj;
 	Queue_LinkedList queLlObj;
-	
+
 	dsPtr = &dsObj;
 	dsPtr->dsInfo();
 
@@ -277,7 +282,7 @@ void MainDisplay::dataStructures() {
 			userChoice = 'n';
 			cerr << "\nWrong Choice.\n";
 		}
-		cout<< "\n Do You Want To Do Another Data Structure Operation. Continue (y/n) ? ";
+		cout << "\n Do You Want To Do Another Data Structure Operation. Continue (y/n) ? ";
 		cin >> userChoice;
 		if (userChoice == 'n') {
 			userChoice = 'y';
@@ -289,13 +294,16 @@ void MainDisplay::dataStructures() {
 
 void MainDisplay::random_algorithms() {
 
-	int base, exp;
-	int exponent_result;
-
+	int base, exp, exponent_result;
+	string word;
+	int length_of_word = 0;
+	
 	DigPow dp;
+	VowelIndex vi;
 
 	while (userChoice == 'y') {
 		cout << "\n 1. Number Exponent";
+		cout << "\n 2. Vowel Index";
 		cout << " \n Enter Choice : ";
 		cin >> ranAlgCh;
 
@@ -307,6 +315,13 @@ void MainDisplay::random_algorithms() {
 			cin >> exp;
 			exponent_result = dp.digPow(base, exp);
 			cout << "\n Result : " << exponent_result;
+			break;
+
+		case 2:
+			cout << "\t Enter word:";
+			cin >> word;
+			length_of_word = word.length();
+			vi.checkVowelIndex(word, length_of_word);
 			break;
 		default:
 			userChoice = 'n';
@@ -361,7 +376,7 @@ void MainDisplay::sortingAlgorithms() {
 
 	sortAlgorithms sortObj, *sortPtr;
 	BubbleSort bsort;
-	
+
 	sortPtr = &sortObj;
 	sortPtr->sortAlgoInfo();
 
@@ -413,8 +428,8 @@ void MainDisplay::josephusAlgorithm() {
 	alPtr = &joe;
 	alPtr->algoInfo();
 
-//	joe.getInput();
-//	joe.eliminatePersons();
+	//	joe.getInput();
+	//	joe.eliminatePersons();
 }
 
 void MainDisplay::enterCountAndNumbersInArray(int inputArr[]) {
@@ -431,7 +446,7 @@ void MainDisplay::enterCountAndNumbersInArray(int inputArr[]) {
 
 int main() {
 
-//	system("clear");
+	//	system("clear");
 
 	MainDisplay mdObj, *mdPtr;
 	mdPtr = &mdObj;
