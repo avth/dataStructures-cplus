@@ -10,7 +10,7 @@ class sortAlgorithms {
 public:
 	sortAlgorithms();
 	~sortAlgorithms();
-	void sortAlgoInfo();
+	virtual void sortAlgoInfo();
 	void enterCountAndNumbersInArray(int[]);
 	void printOriginalArr(int[], int);
 };

@@ -72,10 +72,10 @@
     <ClCompile Include="randomAlgorithms\DigPow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="InsertionSort.cpp">
+    <ClCompile Include="randomAlgorithms\VowelIndex.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="randomAlgorithms\VowelIndex.cpp">
+    <ClCompile Include="sortingAlgorithms\InsertionSort.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -137,10 +137,10 @@
     <ClInclude Include="randomAlgorithms\DigPow.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="InsertionSort.h">
+    <ClInclude Include="randomAlgorithms\VowelIndex.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="randomAlgorithms\VowelIndex.h">
+    <ClInclude Include="sortingAlgorithms\InsertionSort.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

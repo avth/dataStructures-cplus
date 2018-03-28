@@ -35,6 +35,7 @@ using namespace std;
 
 #include "./sortingAlgorithms/sortAlgorithms.h"
 #include "./sortingAlgorithms/bubbleSort.h"
+#include "./sortingAlgorithms/InsertionSort.h"
 #include "./randomAlgorithms/DigPow.h"
 #include "./randomAlgorithms/VowelIndex.h"
 
@@ -376,6 +377,7 @@ void MainDisplay::sortingAlgorithms() {
 
 	sortAlgorithms sortObj, *sortPtr;
 	BubbleSort bsort;
+	InsertionSort iSort;
 
 	sortPtr = &sortObj;
 	sortPtr->sortAlgoInfo();
@@ -391,6 +393,8 @@ void MainDisplay::sortingAlgorithms() {
 		sortPtr->sortAlgoInfo();
 		break;
 	case 2:
+		sortPtr = &iSort;
+		sortPtr->sortAlgoInfo();
 		break;
 	default:
 		cout << "\n Incorrect Choice. Exiting." << endl;

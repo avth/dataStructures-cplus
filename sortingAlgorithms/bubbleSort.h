@@ -15,7 +15,7 @@ public:
 	void printOriginalArr(int originalArr[], int max);
 	void bubbleSortArr(int arrToSort[], int max);
 	void printSortedArr(int sortedArr[], int max);
-	void sortAlgoInfo();
+	virtual void sortAlgoInfo();
 	void enterCountAndNumbersInArray(int[]);
 	~BubbleSort();
 };

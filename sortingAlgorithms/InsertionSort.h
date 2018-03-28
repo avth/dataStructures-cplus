@@ -12,6 +12,8 @@ public:
 	void enterCountAndNumbersInArray(int[]);
 	void printOriginalArr(int[], int);
 	void sortInsertion(int[], int);
+	void printSortedArr(int[], int);
+	void sortAlgoInfo();
 
 private:
 	int inputArr[MAX];
