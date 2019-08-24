@@ -30,7 +30,7 @@ void InsertionSort::enterCountAndNumbersInArray(int inputArr[]) {
 }
 
 void InsertionSort::printOriginalArr(int inputArr[], int) {
-	cout << "\n Numbers in the original array:";
+	cout <<"Original array:";
 	for (int i = 0;i < count;i++) {
 		cout << inputArr[i];
 		cout << "\t";
@@ -89,7 +89,7 @@ void InsertionSort::sortInsertion(int arrToSort[], int count) {
 }	//	sortInsertion method ends here
 
 void InsertionSort::printSortedArr(int sortedArr[], int max) {
-	cout << "Sorted Array:" << endl;
+	cout << "Sorted Array:\t";
 	for (int l = 0;l < max;l++) {
 		cout << sortedArr[l] << "\t";
 	}

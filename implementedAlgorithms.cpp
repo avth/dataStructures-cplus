@@ -13,6 +13,7 @@
 #include <stdlib.h>
 #include<iostream>
 #include<string>
+
 using namespace std;
 
 #include "./algorithms/algorithms.h"
@@ -39,6 +40,9 @@ using namespace std;
 #include "./randomAlgorithms/DigPow.h"
 #include "./randomAlgorithms/VowelIndex.h"
 
+#include "./trees/TreeAlgorithms.h"
+#include "./trees/BinaryTree.h"
+
 class MainDisplay {
 
 public:
@@ -56,6 +60,7 @@ public:
 	void conversion();
 	void recursionAlgorithms();
 	void realAlgorithms();
+	void treeOperations();
 
 private:
 	char algoChoice, userChoice;
@@ -113,6 +118,7 @@ void MainDisplay::displayOptions() {
 		case 'D':
 		case 'd':
 			//	MainDisplay::sievePrimeNos();
+			MainDisplay::treeOperations();
 			break;
 		case 'E':
 		case 'e':
@@ -180,6 +186,43 @@ void MainDisplay::recursionAlgorithms() {
 			continue;
 	}
 }
+
+void MainDisplay::treeOperations() {
+	TreeAlgorithms taObj, *taPtr;
+	BinaryTree btObj;
+
+	taPtr = &taObj;
+	taPtr->treeAlgorithmsInfo();
+
+	char uChoice = 'y';
+	int treeOperationCh;
+
+	while (uChoice == 'y') {
+
+		cout << "\n 1. Binary Tree";
+		cout << "\n Enter Choice :";
+		cin >> treeOperationCh;
+
+		switch (treeOperationCh) {
+		case 1:
+			taPtr = &btObj;
+			taPtr->treeAlgorithmsInfo();
+			break;
+		default:
+			cout << "\n Wrong Choice";
+		}	//	switch loop ends here
+
+		cout << "\n Do you want to continue again ?";
+		cin >> uChoice;
+		if (uChoice == 'y') {
+			continue;
+		}
+		else {
+			break;
+		}
+	}	//	while loop ends here	
+}
+
 
 void MainDisplay::conversion() {
 	Conversion convObj, *convPtr;

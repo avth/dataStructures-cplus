@@ -12,8 +12,8 @@ using namespace std;
 
 void sortAlgorithms::sortAlgoInfo() {
 
-	cout << "\n Bubble Sort -> Implemented.";
-	cout << "\n Insertion Sort -> WORKING ON IT";
+	cout << "\n Bubble Sort -> IMPLEMENTED.";
+	cout << "\n Insertion Sort -> IMPLEMENTED.";
 }
 
 sortAlgorithms::sortAlgorithms() {
