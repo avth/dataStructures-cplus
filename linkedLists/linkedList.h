@@ -11,8 +11,9 @@ private:
 	struct node {
 		int key;
 		struct node *next;
+		struct node *previous;
 	};
-	struct node *head, *last, *traLL, *searchNodes, *currentNode, *previousNode;
+	struct node *head, *last, *traLL, *searchNodes, *currentNode, *previousNode, *firstNode, *reverse;
 	bool llistEmpty, searchResult, delNodeResult;
 	char llChoice;
 	int llOpChoice;
@@ -23,6 +24,7 @@ public:
 	void getInput();
 	void insertToLL(itemIntType v);
 	void traverseLL();
+	void reverseLL();
 	bool deleteFromLL(itemIntType);
 	bool searchLL(itemIntType v);
 	void llInfo();

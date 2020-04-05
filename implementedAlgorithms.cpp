@@ -85,63 +85,35 @@ void MainDisplay::displayOptions() {
 
 		cout << "\nData Structures & Algorithms Implemented In C++\n";
 		cout << "--------------------" << endl;
-		cout << "A. SORTING" << endl;
-		cout << "B. LINKED LIST" << endl;
-		cout << "C. ARRAYS " << endl;
-		cout << "D. TREES" << endl;
-		cout << "E. STRINGS" << endl;
-		cout << "F. GRAPHS" << endl;
-		cout << "G. DYNAMIC PROGRAMMING" << endl;
-		cout << "H. ALGORITHMS" << endl;
-		cout << "I. DATA STRUCTURES" << endl;
-		cout << "J. RANDOM ALGORITHMS" << endl;
-		cout << "Q.Quit" << endl;
+		cout << "a. sorting" << endl;
+		cout << "b. linked list" << endl;
+		cout << "c. algorithms" << endl;
+		cout << "d. data structures" << endl;
+		cout << "e. random algorithms" << endl;
+		cout << "q. quit" << endl;
 		cout << "Enter Algorithm Choice:";
 		cin >> algoChoice;
 
 		switch (algoChoice) {
 
 		case 'A':
-		case 'a':
-			//MainDisplay::dataStructures();
+		case 'a':		
 			MainDisplay::sortingAlgorithms();
 			break;
 		case 'B':
 		case 'b':
-			MainDisplay::linkedListAlgorithms();
-			//	MainDisplay::sortingAlgorithms();
+			MainDisplay::linkedListAlgorithms();			
 			break;
 		case 'C':
 		case 'c':
-			//	MainDisplay::euclidAlgorithm();
+			MainDisplay::realAlgorithms();
 			break;
 		case 'D':
 		case 'd':
-			//	MainDisplay::sievePrimeNos();
-			MainDisplay::treeOperations();
+			MainDisplay::dataStructures();
 			break;
 		case 'E':
 		case 'e':
-			//	MainDisplay::josephusAlgorithm();
-			break;
-		case 'F':
-		case 'f':
-			//	MainDisplay::conversion();
-			break;
-		case 'G':
-		case 'g':
-			//	MainDisplay::recursionAlgorithms();
-			break;
-		case 'H':
-		case 'h':
-			MainDisplay::realAlgorithms();
-			break;
-		case 'I':
-		case 'i':
-			MainDisplay::dataStructures();
-			break;
-		case 'J':
-		case 'j':
 			MainDisplay::random_algorithms();
 			break;
 		case 'Q':
